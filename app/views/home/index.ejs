@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lista de contatos</title>
+</head>
+<body>
+	<h1>Home da lista de contatos</h1>
+	<br>
+	<table>
+		<thead>
+			<th>ID</th>
+			<th>Nome</th>
+			<th>E-mail</th>
+		</thead>
+		<tbody>
+			<%for(var i=0; i < contatos.length; i++) {%>
+				<tr>
+					<td><%= contatos[i].id %></td>
+					<td><%= contatos[i].nome %></td>
+					<td><%= contatos[i].email %></td>
+				</tr>
+			<%}%>
+		</tbody>
+	</table>
+</body>
+</html>
